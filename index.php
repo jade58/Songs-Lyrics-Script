@@ -67,10 +67,9 @@ if (isset($_GET['send'])) {
 
     <!-- Style Sheet-->
     <link rel="stylesheet" href="style.css"/>
-    <link rel='stylesheet' id='bootstrap-css-css'  href='css/bootstrap.css%3Fver=1.0.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='responsive-css-css'  href='css/responsive.css%3Fver=1.0.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='pretty-photo-css-css'  href='js/prettyphoto/prettyPhoto.css%3Fver=3.1.4.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='main-css-css'  href='css/main.css%3Fver=1.0.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css-css'  href='css/bootstrap.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='responsive-css-css'  href='css/responsive.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='main-css-css'  href='css/main.css' type='text/css' media='all' />
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
