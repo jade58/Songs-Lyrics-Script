@@ -84,7 +84,7 @@ if ((isset($_GET['mod'])) and ($_GET['mod'] == 'logout')) {
 
             <div class="logo-container">
               <!-- Website Logo -->
-              <a href="/sls/"  title="Главная">
+              <a href="/"  title="Главная">
                 <div class="logo">Панель администратора</div>
               </a>
 

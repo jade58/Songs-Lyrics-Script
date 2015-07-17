@@ -1,5 +1,4 @@
 <?php
-
 /* 
 @Author - JadeWizard
 @Blog - Jade-Wizard.ru
@@ -99,5 +98,4 @@ function admin_logout() {
   setcookie('a_token', "", time() - 3600); //Записываем куки
 
 }
-
 ?>
