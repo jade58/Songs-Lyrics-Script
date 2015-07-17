@@ -6,7 +6,7 @@
 @Name - Songs Lyrics Search
 @Version - 0.3.1
 @Git - https://github.com/jade58/sls
-@Главная страница./
+@Главная страница.//
 */
 
 ini_set('display_errors', 1); //Отображение ошибок
