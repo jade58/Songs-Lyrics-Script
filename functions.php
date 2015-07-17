@@ -98,30 +98,13 @@ require_once 'config.php'; //Подключаем файл с конфигами
 
             $response_array = $api_array['response'];
 
-            array_shift($response_array);
-
-            foreach ($response_array as $result) {
-           
-            echo 
-<<<HTML
-<a href="http://$url?query=$query&lyrics=$result[lyrics_id]&send=1" class="list-group-item">
-<h4 class="list-group-item-heading">$result[artist]</h4>
-<p class="list-group-item-text">$result[title]</p>
-</a>
-HTML;
-
-            }
+            return $response_array;
 
         } else {
 
-          $response_array = $api_array['error'];
+            $response_array = $api_array['error'];
 
-                      echo 
-<<<HTML
-<h4 class="list-group-item-heading">Ошибка!</h4>
-<p class="list-group-item-text">$response_array[error_code] - $response_array[error_msg]</p>
-
-HTML;
+            return $response_array;
 
         }
 
@@ -129,9 +112,7 @@ HTML;
 
   //Данной функцией мы получаем текст аудио.
 
-  function get_lyrics ($access_token) {
-
-        $lyrics_id = $_GET['lyrics'];
+  function get_lyrics ($access_token,$lyrics_id) {
 
         $api_url = 'https://api.vk.com/method/audio.getLyrics?lyrics_id='.$lyrics_id.'&access_token='.$access_token.'';
 

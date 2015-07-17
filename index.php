@@ -106,13 +106,13 @@ if (isset($_GET['send'])) {
 
                     <?php if (!isset($_COOKIE['token'])) { ?>
 
-                      <li><a href="https://oauth.vk.com/authorize?client_id=<?php echo $app_id; ?>&scope=8&redirect_uri=http://<?php echo $url; ?>&response_type=code">Авторизация</a></li>
+                    <li><a href="https://oauth.vk.com/authorize?client_id=<?php echo $app_id; ?>&scope=8&redirect_uri=http://<?php echo $url; ?>&response_type=code">Авторизация</a></li>
 
                     <?php } else { ?>
 
-                      <li><a href="#"><b>Привет, <?php echo get_name($user_id); ?> </b></a></li>
+                    <li><a href="#"><b>Привет, <?php echo get_name($user_id); ?> </b></a></li>
 
-                      <li><a href="http://<?php echo $url; ?>?logout=1">Выход</a></li>
+                    <li><a href="http://<?php echo $url; ?>?logout=1">Выход</a></li>
 
                     <?php } ?>
                   </ul>
@@ -153,7 +153,16 @@ if (isset($_GET['send'])) {
                 <div class="span5 page-content">
                   <div class="list-group">
 
-                    <?php get_audio ($query,$token); ?>
+                    <?php $index_array = get_audio ($query,$token); array_shift($index_array)?>
+
+                    <?php foreach ($index_array as $result) { ?>
+
+                    <a href="http://<?php echo $url; ?>?query=<?php echo $query; ?>&lyrics=<?php echo $result['lyrics_id']; ?>&send=1" class="list-group-item">
+                      <h4 class="list-group-item-heading"><?php echo ($result['artist']) ?></h4>
+                      <p class="list-group-item-text"><?php echo ($result['title']) ?></p>
+                    </a>
+
+                    <?php } ?>
 
                   </div> 
                 </div> 
@@ -164,11 +173,15 @@ if (isset($_GET['send'])) {
                     <div class="panel-body">
 
                      <?php if (isset($_GET['lyrics'])) {
-                        echo nl2br(get_lyrics($token)); 
+
+                      $get_lyrics_id = $_GET['lyrics'];
+
+                      echo nl2br(get_lyrics($token,$get_lyrics_id)); 
+
                       ?>
 
                       <?php } else { ?>
-                        Выберете песню
+                      Выберете песню
                       <?php } ?>
 
                     </div>
