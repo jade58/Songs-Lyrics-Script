@@ -174,7 +174,7 @@ if (isset($_GET['send'])) {
 
                      <?php if (isset($_GET['lyrics'])) {
 
-                      $get_lyrics_id = mysql_real_escape_string ($_GET['lyrics']);
+                      $get_lyrics_id = ($_GET['lyrics']);
 
                       echo nl2br(get_lyrics($token,$get_lyrics_id)); 
 
