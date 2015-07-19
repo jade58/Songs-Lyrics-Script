@@ -63,7 +63,7 @@ if ((isset($_GET['mod'])) and ($_GET['mod'] == 'logout')) {
 
   <!-- Style Sheet-->
   <link rel="stylesheet" href="../style.css"/>
-  <link rel='stylesheet' id='bootstrap-css-css'  href='../css/bootstrap.css' type='text/css' media='all' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel='stylesheet' id='responsive-css-css'  href='../css/responsive.css' type='text/css' media='all' />
   <link rel='stylesheet' id='main-css-css'  href='../css/main.css' type='text/css' media='all' />
 
