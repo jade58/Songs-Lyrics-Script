@@ -15,8 +15,9 @@ require_once '../admin/a_functions.php'; //Подключаем файл с ко
 if (isset($_POST['send'])) {
 
 	$new_audio_num = $_POST['audio_num'];
+  $new_method = $_POST['smethod'];
 
-	search_update($new_audio_num,1);
+	search_update($new_audio_num,$new_method);
 
 }
 
@@ -37,14 +38,14 @@ if (isset($_POST['send'])) {
       <div class="col-lg-10">
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-            Название сверху, исполнитель снизу.
+            <input type="radio" name="smethod" id="optionsRadios1" value="1">
+            Название снизу, исполнитель сверху.
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-            Название снизу, исполнитель сверху.
+            <input type="radio" name="smethod" id="optionsRadios2" value="2">
+            Название сверху, исполнитель снизу.
           </label>
         </div>
       </div>

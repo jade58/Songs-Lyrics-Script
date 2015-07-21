@@ -43,12 +43,18 @@ header("Location: http://".$redirect_url.""); //Обновляем страни�
 
 function search_update($new_audio_num,$new_type) {
  
-  global $link,$audio_num,$redirect_url;
+  global $link,$audio_num,$redirect_url,$s_method;
 
   if ($new_audio_num != $audio_num) {
 
     $result = mysqli_query($link, "UPDATE config SET value = '$new_audio_num' WHERE name='audio_num'");
 
+  }
+
+  if ($new_type != $s_method) {
+
+    $result = mysqli_query($link, "UPDATE config SET value = '$new_type' WHERE name='s_method'");
+    
   }
 
   header("Location: http://".$redirect_url.""); //Обновляем страницу

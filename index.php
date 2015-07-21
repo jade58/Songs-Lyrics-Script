@@ -158,8 +158,13 @@ if (isset($_GET['send'])) {
                     <?php foreach ($index_array as $result) { ?>
 
                     <a href="http://<?php echo $url; ?>?query=<?php echo $query; ?>&lyrics=<?php echo $result['lyrics_id']; ?>&send=1" class="list-group-item">
-                      <h4 class="list-group-item-heading"><?php echo ($result['artist']) ?></h4>
-                      <p class="list-group-item-text"><?php echo ($result['title']) ?></p>
+                      <?php if ($s_method == 1) { ?>
+                          <h4 class="list-group-item-heading"><?php echo ($result['artist']) ?></h4>
+                          <p class="list-group-item-text"><?php echo ($result['title']) ?></p>
+                      <?php } else { ?>
+                          <h4 class="list-group-item-heading"><?php echo ($result['title']) ?></h4>
+                          <p class="list-group-item-text"><?php echo ($result['artist']) ?></p>
+                      <?php } ?>
                     </a>
 
                     <?php } ?>

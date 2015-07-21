@@ -56,6 +56,10 @@ if ($result = mysqli_query($link, 'SELECT name, value FROM config')) {
           case 'title':
             $title = $row['value']; //Заголовок сайта
             break;
+
+          case 's_method':
+            $s_method = $row['value']; //Заголовок сайта
+            break;
             
         }
     } 
