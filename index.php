@@ -88,7 +88,7 @@ if (isset($_GET['send'])) {
 
               <div class="logo-container">
                 <!-- Website Logo -->
-                <a href="/sls/"  title="Главная">
+                <a href="/"  title="Главная">
                   <div class="logo"><?php echo $site_name; ?></div>
                 </a>
 
@@ -99,9 +99,9 @@ if (isset($_GET['send'])) {
               <nav class="main-nav">
                 <div class="menu-top-menu-container">
                   <ul id="menu-top-menu" class="clearfix">
-                    <li class="current-menu-item"><a href="index.html">Главная</a></li>
-                    <li><a href="home-categories-description.html">О сайте</a></li>
-                    <li><a href="home-categories-articles.html">Правообладателям</a></li>
+                    <li class="current-menu-item"><a href="/">Главная</a></li>
+                    <li><a href="/">О сайте</a></li>
+                    <li><a href="/">Правообладателям</a></li>
                     <li><a href="#">|</a></li>
 
                     <?php if (!isset($_COOKIE['token'])) { ?>
