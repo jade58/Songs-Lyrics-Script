@@ -1,5 +1,4 @@
 <?php
-
 /* 
 @Author - JadeWizard
 @Blog - Jade-Wizard.ru
