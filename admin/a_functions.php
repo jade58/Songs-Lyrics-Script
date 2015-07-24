@@ -17,25 +17,25 @@ $redirect_url = $_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME'].'?'.$_SERVER['QUER
 
 function general_update($new_site_name,$new_title,$new_description) {
 
-  global $link,$site_name,$description,$title,$redirect_url;
+      global $link,$site_name,$description,$title,$redirect_url;
 
-  if ($new_site_name != $site_name) {
+             if ($new_site_name != $site_name) {
 
-    $result = mysqli_query($link, "UPDATE config SET value = '$new_site_name' WHERE name='site_name'");
+               $result = mysqli_query($link, "UPDATE config SET value = '$new_site_name' WHERE name='site_name'");
 
-  }
+             }
 
-  if ($new_description != $description) {
+            if ($new_description != $description) {
 
-    $result = mysqli_query($link, "UPDATE config SET value = '$new_description' WHERE name='description'");
+               $result = mysqli_query($link, "UPDATE config SET value = '$new_description' WHERE name='description'");
 
-  }
+            }
 
-  if ($title != $new_title) {
+           if ($title != $new_title) {
 
-    $result = mysqli_query($link, "UPDATE config SET value = '$new_title' WHERE name='title'");
+               $result = mysqli_query($link, "UPDATE config SET value = '$new_title' WHERE name='title'");
 
-  }
+           }
 
 header("Location: http://".$redirect_url.""); //Обновляем страницу
 

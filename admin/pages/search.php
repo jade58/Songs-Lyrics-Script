@@ -38,13 +38,13 @@ if (isset($_POST['send'])) {
       <div class="col-lg-10">
         <div class="radio">
           <label>
-            <input type="radio" name="smethod" id="optionsRadios1" value="1">
+            <input type="radio" name="smethod" id="optionsRadios1" value="1" <?php if ($s_method == 1) { echo 'checked="checked"'; } ?> >
             Название снизу, исполнитель сверху.
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="smethod" id="optionsRadios2" value="2">
+            <input type="radio" name="smethod" id="optionsRadios2" value="2" <?php if ($s_method == 2) { echo 'checked="checked"'; } ?> >
             Название сверху, исполнитель снизу.
           </label>
         </div>
