@@ -21,19 +21,19 @@ function general_update($new_site_name,$new_title,$new_description) {
 
              if ($new_site_name != $site_name) {
 
-               $result = mysqli_query($link, "UPDATE config SET value = '$new_site_name' WHERE name='site_name'");
+                $result = mysqli_query($link, "UPDATE config SET value = '$new_site_name' WHERE name='site_name'");
 
              }
 
             if ($new_description != $description) {
 
-               $result = mysqli_query($link, "UPDATE config SET value = '$new_description' WHERE name='description'");
+                $result = mysqli_query($link, "UPDATE config SET value = '$new_description' WHERE name='description'");
 
             }
 
            if ($title != $new_title) {
 
-               $result = mysqli_query($link, "UPDATE config SET value = '$new_title' WHERE name='title'");
+                $result = mysqli_query($link, "UPDATE config SET value = '$new_title' WHERE name='title'");
 
            }
 

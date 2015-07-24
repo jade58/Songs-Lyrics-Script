@@ -42,7 +42,7 @@ if (isset($_GET['send'])) {
     $query = $_GET['query']; 
   }
 
-  ?>
+?>
 
 
   <!doctype html>
@@ -110,9 +110,9 @@ if (isset($_GET['send'])) {
 
                     <?php } else { ?>
 
-                    <li><a href="#"><b>Привет, <?php echo get_name($user_id); ?> </b></a></li>
+                      <li><a href="#"><b>Привет, <?php echo get_name($user_id); ?> </b></a></li>
 
-                    <li><a href="http://<?php echo $url; ?>?logout=1">Выход</a></li>
+                      <li><a href="http://<?php echo $url; ?>?logout=1">Выход</a></li>
 
                     <?php } ?>
                   </ul>
