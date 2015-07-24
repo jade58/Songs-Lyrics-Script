@@ -42,7 +42,7 @@ if (isset($_GET['send'])) {
     $query = $_GET['query']; 
   }
 
-?>
+  ?>
 
 
   <!doctype html>
@@ -110,9 +110,9 @@ if (isset($_GET['send'])) {
 
                     <?php } else { ?>
 
-                      <li><a href="#"><b>Привет, <?php echo get_name($user_id); ?> </b></a></li>
+                    <li><a href="#"><b>Привет, <?php echo get_name($user_id); ?> </b></a></li>
 
-                      <li><a href="http://<?php echo $url; ?>?logout=1">Выход</a></li>
+                    <li><a href="http://<?php echo $url; ?>?logout=1">Выход</a></li>
 
                     <?php } ?>
                   </ul>
@@ -159,11 +159,11 @@ if (isset($_GET['send'])) {
 
                     <a href="http://<?php echo $url; ?>?query=<?php echo $query; ?>&lyrics=<?php echo $result['lyrics_id']; ?>&send=1" class="list-group-item">
                       <?php if ($s_method == 1) { ?>
-                          <h4 class="list-group-item-heading"><?php echo ($result['artist']) ?></h4>
-                          <p class="list-group-item-text"><?php echo ($result['title']) ?></p>
+                      <h4 class="list-group-item-heading"><?php echo ($result['artist']) ?></h4>
+                      <p class="list-group-item-text"><?php echo ($result['title']) ?></p>
                       <?php } else { ?>
-                          <h4 class="list-group-item-heading"><?php echo ($result['title']) ?></h4>
-                          <p class="list-group-item-text"><?php echo ($result['artist']) ?></p>
+                      <h4 class="list-group-item-heading"><?php echo ($result['title']) ?></h4>
+                      <p class="list-group-item-text"><?php echo ($result['artist']) ?></p>
                       <?php } ?>
                     </a>
 
@@ -218,36 +218,82 @@ if (isset($_GET['send'])) {
 
            <?php } ?> 
 
-           <!-- end of page content -->
-         </div>
-       </div>
-     </div>
-     <!-- End of Page Container -->
+           <div class="span5 page-content">
+            <h3>Последние найденые песни</h3>
+             <div class="list-group">
+              <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+              </a>
+              <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+              </a>
+              <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+              </a>
+              <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+              </a>
+              <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+              </a>
+            </div>
 
-
-
-     <!-- Footer Bottom -->
-     <div id="footer-bottom-wrapper">
-      <div id="footer-bottom" class="container">
-        <div class="row">
-          <div class="span6">
-            <p class="copyright">
-              Footer.
-            </p>
           </div>
+
+          <div class="span5 page-content">
+            <h3>Как искать?</h3>
+            <div class="panel panel-default">
+              <div class="panel-body">
+               <p>Для того, что бы искать тексты песен,
+               <p>Вам нужно: Авторизироватся через ВКонтакте.
+              </div>
+            </div>
+
+          </div>
+
+          <div class="span10 page-content">
+            <div class="list-group"><div class="list-group-item">
+              <h4 class="list-group-item-heading">О сайте</h4>
+              <p class="list-group-item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- end of page content -->
+      </div>
+    </div>
+  </div>
+  <!-- End of Page Container -->
+
+
+
+  <!-- Footer Bottom -->
+  <div id="footer-bottom-wrapper">
+    <div id="footer-bottom" class="container">
+      <div class="row">
+        <div class="span6">
+          <p class="copyright">
+            Footer.
+          </p>
         </div>
       </div>
     </div>
-    <!-- End of Footer Bottom -->
+  </div>
+  <!-- End of Footer Bottom -->
 
-  </footer>
-  <!-- End of Footer -->
+</footer>
+<!-- End of Footer -->
 
-  <a href="index.html#top" id="scroll-top"></a>
+<a href="index.html#top" id="scroll-top"></a>
 
-  <!-- script -->
-  <script type='text/javascript' src='js/jquery-1.8.3.min.js'></script>
-  <script type='text/javascript' src='js/custom.js'></script>
+<!-- script -->
+<script type='text/javascript' src='js/jquery-1.8.3.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
 
 </body>
 </html>
