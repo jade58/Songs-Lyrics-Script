@@ -220,7 +220,7 @@ if (isset($_GET['send'])) {
 
            <div class="span5 page-content">
             <h3>Последние найденые песни</h3>
-             <div class="list-group">
+            <div class="list-group">
               <a href="#" class="list-group-item">
                 <h4 class="list-group-item-heading">List group item heading</h4>
                 <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
@@ -249,17 +249,17 @@ if (isset($_GET['send'])) {
             <h3>Как искать?</h3>
             <div class="panel panel-default">
               <div class="panel-body">
-               <p>Для того, что бы искать тексты песен,
-               <p>Вам нужно: Авторизироватся через ВКонтакте.
+                <p>Для поиска текстов песен Вам необходимо авторизоваться при помощи социальной сети ВКонтакте. <p>После успешной авторизации
+                Вам нужно ввести поисковый запрос в строку выше и нажать кнопку поиск. <p>После чего нужно выбрать нужную композицию, и нажать неё.
               </div>
             </div>
 
           </div>
 
           <div class="span10 page-content">
+            <h3>О сайте</h3>
             <div class="list-group"><div class="list-group-item">
-              <h4 class="list-group-item-heading">О сайте</h4>
-              <p class="list-group-item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p class="list-group-item-text"><?php echo $description; ?></p>
             </div>
           </div>
         </div>
