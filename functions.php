@@ -25,9 +25,9 @@ require_once 'config.php'; //Подключаем файл с конфигами
         $api_url = 'https://oauth.vk.com/access_token?client_id='.$app_id.'&client_secret='.$secret_key.'&code='.$secret_code.'&redirect_uri=http://'.$url.''; 
         $api_qurey = curl_init();
 
-        curl_setopt($api_qurey, CURLOPT_URL, $api_url);
-        curl_setopt($api_qurey, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($api_qurey, CURLOPT_HEADER, 0);
+           curl_setopt($api_qurey, CURLOPT_URL, $api_url);
+           curl_setopt($api_qurey, CURLOPT_RETURNTRANSFER, 1);
+           curl_setopt($api_qurey, CURLOPT_HEADER, 0);
 
         $api_response = curl_exec($api_qurey);
         $api_array = json_decode($api_response,true);
@@ -48,9 +48,9 @@ require_once 'config.php'; //Подключаем файл с конфигами
 
         $api_qurey = curl_init();
 
-        curl_setopt($api_qurey, CURLOPT_URL,$api_url);
-        curl_setopt($api_qurey, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($api_qurey, CURLOPT_HEADER, 0);
+           curl_setopt($api_qurey, CURLOPT_URL,$api_url);
+           curl_setopt($api_qurey, CURLOPT_RETURNTRANSFER, 1);
+           curl_setopt($api_qurey, CURLOPT_HEADER, 0);
 
         $api_response = curl_exec($api_qurey);
         $api_array = json_decode($api_response,true);
@@ -87,9 +87,9 @@ require_once 'config.php'; //Подключаем файл с конфигами
 
         $api_qurey = curl_init();
 
-        curl_setopt($api_qurey, CURLOPT_URL,$api_url);
-        curl_setopt($api_qurey, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($api_qurey, CURLOPT_HEADER, 0);
+           curl_setopt($api_qurey, CURLOPT_URL,$api_url);
+           curl_setopt($api_qurey, CURLOPT_RETURNTRANSFER, 1);
+           curl_setopt($api_qurey, CURLOPT_HEADER, 0);
 
         $api_response = curl_exec($api_qurey);
         $api_array = json_decode($api_response,true);
@@ -118,9 +118,9 @@ require_once 'config.php'; //Подключаем файл с конфигами
 
         $api_qurey = curl_init();
 
-        curl_setopt($api_qurey, CURLOPT_URL,$api_url);
-        curl_setopt($api_qurey, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($api_qurey, CURLOPT_HEADER, 0);
+           curl_setopt($api_qurey, CURLOPT_URL,$api_url);
+           curl_setopt($api_qurey, CURLOPT_RETURNTRANSFER, 1);
+           curl_setopt($api_qurey, CURLOPT_HEADER, 0);
 
         $api_response = curl_exec($api_qurey);
         $api_array = json_decode($api_response,true);

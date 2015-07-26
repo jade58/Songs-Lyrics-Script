@@ -33,7 +33,7 @@ header("Location: http://".$url.""); //Что бы кукисы обновили
 }
 
 if (isset($_GET['logout'])) {
-logout (); //Выходим
+  logout (); //Выходим
 }
 
 if (isset($_GET['send'])) {
