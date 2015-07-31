@@ -1,1 +1,1 @@
-[![Demo CountPages alpha](http://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
+[![Demo CountPages alpha](http://i.imgur.com/h5ORWxw.png)](http://www.youtube.com/watch?v=89F79eC_MzU&feature=youtu.be)
